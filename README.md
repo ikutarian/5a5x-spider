@@ -10,7 +10,13 @@
 
 ## 使用方法
 
-推荐使用 `virtualenv` 创建一个隔离的运行环境，然后在终端中输入以下命令启动爬虫程序
+推荐使用 `virtualenv` 创建一个隔离的运行环境，然后安装依赖
+
+```
+pip3 install -r requirements.txt
+```
+
+运行程序
 
 ```
 python3 spider.py
