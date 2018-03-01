@@ -32,8 +32,7 @@ def down_and_save_file(url, filename):
 
         
 def main(dir, source_type):
-    total_page = int(getDoc(base_url + source_type).xpath('//div[@id="pages"]/b[2]/text()')[0][1:])
-    total_page = 1
+    total_page = int(getDoc(base_url + source_type).xpath('//div[@id="pages"]/b[2]/text()')[0][1:])    
     for page in range(1, total_page + 1):
         print('正在爬取第{}页'.format(page))
         page_url = base_url + source_type + '{}.html'.format(page)
